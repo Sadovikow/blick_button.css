@@ -1,8 +1,12 @@
 # blick_button.css
 Кнопка с эффектом блика
 
+<b>1. Сама кнопка должна быть в теге button</b>
+```html
+<button type="submit" name="submit" class="s-button is-blicked" title="Отправить" value="Отправить">Отправить</button>
+```
 
-<b>1. Класс, который нужно добавить к кнопке</b>
+<b>2. Класс, который нужно добавить к кнопке</b>
 ```css
 .is-blicked:after {
     content: "";
@@ -25,7 +29,7 @@
 }
 ```
 
-2. Фрейм анимации
+3. Фрейм анимации
 ```css
 @-webkit-keyframes blick{
     15%, to {
